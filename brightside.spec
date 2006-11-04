@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://files.catmur.co.uk/brightside/%{name}-%{version}.tar.bz2
-# Source0-md5:	eed041f45dfa5f29796fde9e302d68c6
+# Source0-md5:	df6dfe0ffbf110036fa1a5549b21e9c3
 Patch0:		%{name}-wnck_workspace_activate.patch
 Patch1:		%{name}-gconf-mouse-speed.patch
 URL:		http://wiki.catmur.co.uk/Brightside
