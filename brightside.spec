@@ -1,4 +1,5 @@
 Summary:	Brightside Screen Corners and Edges daemon
+Summary(pl):	Brightside - demon rogów i krawêdzi ekranu
 Name:		brightside
 Version:	1.4.0
 Release:	1
@@ -9,12 +10,16 @@ Source0:	http://files.catmur.co.uk/brightside/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-wnck_workspace_activate.patch
 Patch1:		%{name}-gconf-mouse-speed.patch
 URL:		http://wiki.catmur.co.uk/Brightside
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRequires:	libwnck-devel
+Requires(post,preun):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Brightside is a tool to add reactivity to the corners and edges of
-your Gnome desktop.
+your GNOME desktop.
 
 Brightside provides edge flipping to allow you to switch to the
 adjacent workspace simply by pressing your mouse against the edge of
@@ -33,6 +38,26 @@ available actions comprise:
 - Dim laptop backlight
 - Custom action
 
+%description -l pl
+Brightside to narzêdzie dodaj±ce reaktywno¶æ rogom i krawêdziom
+pulpitu GNOME.
+
+Brightside udostêpnia zamianê krawêdzi pozwalaj±c± prze³±czyæ siê na
+s±siednie biurko poprzez samo naci¶niêcie przycisku myszy na krawêdzi
+ekranu.
+
+Brightside pozwala tak¿e przypisywaæ ró¿ne konfigurowalne akcje maj±ce
+zaj¶æ kiedy mysz pozostaje w rogu ekranu. Aktualnie dostêpne akcje
+obejmuj±:
+- wyciszenie d¼wiêku
+- zapobieganie w³±czeniu wygaszacza ekranu
+- uruchomienie wygaszacza i zablokowanie ekranu
+- wej¶cie w tryb DPMS standby
+- wej¶cie w tryb DPMS suspend
+- wej¶cie w tryb DPMS off
+- przyciemnienie pod¶wietlenia wy¶wietlacza w laptopie
+- akcje zdefiniowane przez u¿ytkownika
+
 %prep
 %setup -q
 %patch0 -p1
@@ -44,7 +69,6 @@ available actions comprise:
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-#cp -f /usr/share/automake/config.sub .
 %configure \
 	--enable-dependency-tracking \
 	--enable-tray-icon
@@ -67,8 +91,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %preun
 %gconf_schema_uninstall %{name}.schemas
-
-
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
