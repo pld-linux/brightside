@@ -1,5 +1,5 @@
 Summary:	Brightside Screen Corners and Edges daemon
-Summary(pl.UTF-8):   Brightside - demon rogów i krawędzi ekranu
+Summary(pl.UTF-8):	Brightside - demon rogów i krawędzi ekranu
 Name:		brightside
 Version:	1.4.0
 Release:	1
