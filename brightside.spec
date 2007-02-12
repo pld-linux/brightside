@@ -1,5 +1,5 @@
 Summary:	Brightside Screen Corners and Edges daemon
-Summary(pl):	Brightside - demon rogów i krawêdzi ekranu
+Summary(pl.UTF-8):   Brightside - demon rogÃ³w i krawÄ™dzi ekranu
 Name:		brightside
 Version:	1.4.0
 Release:	1
@@ -38,25 +38,25 @@ available actions comprise:
 - Dim laptop backlight
 - Custom action
 
-%description -l pl
-Brightside to narzêdzie dodaj±ce reaktywno¶æ rogom i krawêdziom
+%description -l pl.UTF-8
+Brightside to narzÄ™dzie dodajÄ…ce reaktywnoÅ›Ä‡ rogom i krawÄ™dziom
 pulpitu GNOME.
 
-Brightside udostêpnia zamianê krawêdzi pozwalaj±c± prze³±czyæ siê na
-s±siednie biurko poprzez samo naci¶niêcie przycisku myszy na krawêdzi
+Brightside udostÄ™pnia zamianÄ™ krawÄ™dzi pozwalajÄ…cÄ… przeÅ‚Ä…czyÄ‡ siÄ™ na
+sÄ…siednie biurko poprzez samo naciÅ›niÄ™cie przycisku myszy na krawÄ™dzi
 ekranu.
 
-Brightside pozwala tak¿e przypisywaæ ró¿ne konfigurowalne akcje maj±ce
-zaj¶æ kiedy mysz pozostaje w rogu ekranu. Aktualnie dostêpne akcje
-obejmuj±:
-- wyciszenie d¼wiêku
-- zapobieganie w³±czeniu wygaszacza ekranu
+Brightside pozwala takÅ¼e przypisywaÄ‡ rÃ³Å¼ne konfigurowalne akcje majÄ…ce
+zajÅ›Ä‡ kiedy mysz pozostaje w rogu ekranu. Aktualnie dostÄ™pne akcje
+obejmujÄ…:
+- wyciszenie dÅºwiÄ™ku
+- zapobieganie wÅ‚Ä…czeniu wygaszacza ekranu
 - uruchomienie wygaszacza i zablokowanie ekranu
-- wej¶cie w tryb DPMS standby
-- wej¶cie w tryb DPMS suspend
-- wej¶cie w tryb DPMS off
-- przyciemnienie pod¶wietlenia wy¶wietlacza w laptopie
-- akcje zdefiniowane przez u¿ytkownika
+- wejÅ›cie w tryb DPMS standby
+- wejÅ›cie w tryb DPMS suspend
+- wejÅ›cie w tryb DPMS off
+- przyciemnienie podÅ›wietlenia wyÅ›wietlacza w laptopie
+- akcje zdefiniowane przez uÅ¼ytkownika
 
 %prep
 %setup -q
